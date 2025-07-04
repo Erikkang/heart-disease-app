@@ -25,9 +25,9 @@ user_input["AgeCategory"] = st.number_input("Age Category (as number)", min_valu
 
 # Select-based rating for PhysicalHealth
 physical_map = {
-    "Great (0-3 days)": 2,
-    "Average (4-10 days)": 7,
-    "Poor (11-30 days)": 20
+    "Great": 2,
+    "Average": 7,
+    "Poor": 20
 }
 user_input["PhysicalHealth"] = physical_map[
     st.selectbox("Physical Health (last 30 days)", list(physical_map.keys()))
@@ -35,9 +35,9 @@ user_input["PhysicalHealth"] = physical_map[
 
 # Select-based rating for MentalHealth
 mental_map = {
-    "Great (0-3 days)": 2,
-    "Average (4-10 days)": 7,
-    "Poor (11-30 days)": 20
+    "Great": 2,
+    "Average": 7,
+    "Poor": 20
 }
 user_input["MentalHealth"] = mental_map[
     st.selectbox("Mental Health (last 30 days)", list(mental_map.keys()))
